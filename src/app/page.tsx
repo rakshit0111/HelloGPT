@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
-import { MessageSquare, Plus, Send, User, Bot, Menu, X, Settings, History, Trash2, Edit3 } from "lucide-react"
+import { MessageSquare, Plus, Send, User, Bot, Menu, X,  History, Trash2, } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 interface Message {
@@ -151,6 +151,7 @@ export default function ChatPage() {
                 }
               } catch (e) {
                 // Ignore parsing errors for malformed chunks
+                console.log(e);
               }
             }
           }
